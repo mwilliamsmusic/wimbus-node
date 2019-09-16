@@ -16,7 +16,7 @@ app.use((req, res, next) => {
 
 // Location Routing and Controlling
 app.use('/magik',magik);
-app.use('/ornery-coast',oCoast);
+app.use('/oc',oCoast);
 app.use('/kami',kami);
 
 // Serve Image Files
@@ -41,4 +41,4 @@ app.use('/mw', express.static('public/mwmIMG'));
 app.use('/api', express.static('public/API-Doc'));
 
 // Server Address
-app.listen(process.env.PORT||4040);
+app.listen(process.env.PORT||8080);
