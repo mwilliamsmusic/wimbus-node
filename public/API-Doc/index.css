@@ -1,0 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black&display=swap');
+html {
+
+    font-family: 'Archivo Black', sans-serif;
+    background-color: rgba(53, 53, 53, 0.2);
+    margin: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type:none;
+    color: blue;
+}
+.blah {
+    color: gold;
+}
