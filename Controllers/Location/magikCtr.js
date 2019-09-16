@@ -1,0 +1,17 @@
+const pool = require('../../SQL/config');
+
+// Item GET
+exports.getItems = (request, response, next) => {
+  pool.query('SELECT * FROM magik_item',(error,result) => {
+    if (error) throw error;
+    response.send(result);
+  })
+};
+
+//Equip GET
+exports.getEquip = (request, response, next) => {
+  pool.query('SELECT * FROM magik_equip',(error,result) => {
+    if (error) throw error;
+    response.send(result);
+  })
+};
