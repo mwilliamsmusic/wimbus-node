@@ -5,6 +5,8 @@ const bodyParser = require('body-parser');
 const oCoast = require('./Routes/Location/ocRoute');
 const kami = require('./Routes/Location/kamiRoute');
 const magik = require('./Routes/Location/magikRoute');
+const haven = require('./Routes/Location/havenRoute');
+const bPeaks = require('./Routes/Location/bpRoute');
 
 app.use(bodyParser.json());
 app.use((req, res, next) => {
@@ -18,7 +20,8 @@ app.use((req, res, next) => {
 app.use('/magik',magik);
 app.use('/oc',oCoast);
 app.use('/kami',kami);
-
+app.use('/haven',haven);
+app.use('/bp',bPeaks);
 // Serve Image Files
 
 // Wimbus Images
@@ -26,11 +29,11 @@ app.use('/logo', express.static('public/WimbusIMG/Logo'));
 app.use('/bust', express.static('public/WimbusIMG/Bust'));
 
 // Enemies Images
-app.use('enemies/oc', express.static('public/EnemiesIMG/ornery-coast'));
-app.use('enemies/haven', express.static('public/EnemiesIMG/haven'));
-app.use('enemies/bp', express.static('public/EnemiesIMG/beaks-peaks'));
-app.use('enemies/uv', express.static('public/EnemiesIMG/uncanny-valley'));
-app.use('enemies/warehouse', express.static('public/EnemiesIMG/warehouse'));
+app.use('/enemies/oc', express.static('public/EnemiesIMG/ornery-coast'));
+app.use('/enemies/haven', express.static('public/EnemiesIMG/haven'));
+app.use('/enemies/bp', express.static('public/EnemiesIMG/beaks-peaks'));
+app.use('/enemies/uv', express.static('public/EnemiesIMG/uncanny-valley'));
+app.use('/enemies/warehouse', express.static('public/EnemiesIMG/warehouse'));
 
 
 

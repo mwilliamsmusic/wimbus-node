@@ -15,3 +15,11 @@ exports.getEquip = (request, response, next) => {
     response.send(result);
   })
 };
+
+// Enemy GET
+exports.getEnemy = (request, response, next) => {
+  pool.query('SELECT * FROM oc_enemy',(error,result) => {
+    if (error) throw error;
+    response.send(result);
+  })
+};
