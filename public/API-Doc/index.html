@@ -3,11 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <title>Wimbus Studios API</title>
-    <link rel="stylesheet" href="https://wimbusstudios.herokuapp.com/api/index.css">
+   <!-- <link rel="stylesheet" href="https://wimbusstudios.herokuapp.com/api/index.css"> !-->
+     <link rel="stylesheet" href="./index.css">
+
 </head>
 <body>
-<H1> Wimbus Studios API - v.15</H1>
-<p>https://wimbusstudios.herokuapp.com/</p>
+<H1> Wimbus Studios API - v.25</H1>
+
+<h2>Equipment Route:</h2>
+ <h3>https://wimbusstudios.herokuapp.com/equip</h3>
+
+<table id="equip">
+    <tr>
+        <th>String Query</th>
+        <th>Description</th>
+        <th>Type</th>
+    </tr>
+    <tr>
+        <td>equipName</td>
+        <td>Name of the equipment.</td>
+        <td>String</td>
+    </tr>
+    <tr>
+        <td>equipChar</td>
+        <td>Name of character that can use the equipment. Choose from: - Ian, Xenon, Bera, or Everyone</td>
+        <td>String</td>
+    </tr>
+    <tr>
+        <td>equipLoc</td>
+        <td>Indicates the location of where the equipment can be found. Choose from: Kami, Magik, or Ornery Coast</td>
+        <td>String</td>
+    </tr>
+    <tr>
+        <td>equipDesc</td>
+        <td>Equipment description.</td>
+        <td>String</td>
+    </tr>
+
+</table>
+<div class="spacer"></div>
+<p></p>
+<h4>Example:</h4>
+<div class="example">https://wimbusstudios.herokuapp.com/equip<div class="hilight">?equipChar=Ian&equipLoc=Haven</div>
+</div>
+
+<p></p>
+<h2>Item Route:</h2>
+<h3>https://wimbusstudios.herokuapp.com/items</h3>
+
+<table id="items">
+    <tr>
+        <th>String Query</th>
+        <th>Description</th>
+        <th>Type</th>
+    </tr>
+    <tr>
+        <td>itemName</td>
+        <td>Name of the item.</td>
+        <td>String</td>
+    </tr>
+    <tr>
+        <td>itemChar</td>
+        <td>Name of the character that can use the item. Choose from: Ian, Xenon, Bera, or Everyone</td>
+        <td>String</td>
+    </tr>
+    <tr>
+        <td>itemLoc</td>
+        <td>Indicates the location of where the item can be found. Choose from: Kami, Magik, or Ornery Coast</td>
+        <td>String</td>
+    </tr>
+    <tr>
+        <td>itemDesc</td>
+        <td>Equipment description.</td>
+        <td>String</td>
+    </tr>
+
+</table>
+<p></p>
+<p></p>
+<h4>Example:</h4>
+<div class="example">https://wimbusstudios.herokuapp.com/items
+    <div class="hilight">?itemChar=Everyone&itemLoc=Ornery Coast</div>
+</div>
+<div class="spacer"></div>
+
+<h2>Beastiary Route:</h2>
+<h3>https://wimbusstudios.herokuapp.com/beastiary</h3>
+
+<table id="beast">
+    <tr>
+        <th>String Query</th>
+        <th>Description</th>
+        <th>Type</th>
+    </tr>
+    <tr>
+        <td>enemyName</td>
+        <td>Name of the enemy.</td>
+        <td>String</td>
+    </tr>
+    <tr>
+        <td>enemyURL</td>
+        <td>URL where enemy image is stored.</td>
+        <td>String</td>
+    </tr>
+    <tr>
+        <td>enemyLoc</td>
+        <td>Indicates the location of where the enemy can be found. Choose from: Haven, Ornery Coast, or Beaks Peaks</td>
+        <td>String</td>
+    </tr>
+    <tr>
+        <td>enemyType</td>
+        <td>Type or enemy. Choose from: Boss or Enemy</td>
+        <td>String</td>
+    </tr>
+
+</table>
+<p></p>
+<h4>Example:</h4>
+<div class="example">https://wimbusstudios.herokuapp.com/beastiary<div class="hilight">?enemyLoc=Beaks Peaks&equipDesc=Boss</div>
+</div>
+
+<div class="spacer"></div>
+<p></p>
+<p></p>
+<p></p>
+<h5>Classes and more populated information for given routes will be coming soon.<p> www.wimbusstudios.com/IESCompanionGuide</p>
+</h5>
+<!--
 <h2>Image Routes:</h2>
 <ul>
     <h3>Logos:</h3>
@@ -22,21 +144,8 @@
     <li> <a href="https://wimbusstudios.herokuapp.com/bust/FayeBust.png"> bust/FayeBust.png</a> </li>
     <li> <a href="https://wimbusstudios.herokuapp.com/bust/XenonBust.png"> bust/XenonBust.png</a> </li>
 </ul>
+!-->
 
-<h2>Location Routes:</h2>
-<p>Append onto wimbusstudios.herokuapp.com</p>
-<ul>
 
-    <li>Magik - /magik</li>
-    <li>Ornery Coast - /oc</li>
-    <li>Kami - /kami</li>
-</ul>
-
-<h2>Item and Equipment Routes:</h2>
-<p>Append onto wimbusstudios.herokuapp.com/Location Name/item OR equip route</p>
-<ul>
-    <li>/item</li>
-    <li>/equip</li>
-</ul>
 </body>
 </html>

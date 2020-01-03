@@ -12,15 +12,6 @@ CREATE TABLE beastiary (
 
 INSERT INTO beastiary (enemyName, enemyURL, enemyLoc, enemyDesc) VALUES
 
-('Abdominal Snowman','enemies/haven/abdominalSnowman.png', 'Haven','Enemy'),
-('Polarity Bear','enemies/haven/polarityBear.png','Haven','Enemy'),
-('Icebox Guard','enemies/haven/iceboxguard.png','Haven','Enemy'),
-('The Other Icebox Guard','enemies/haven/iceboxguard2.png','Haven','Enemy'),
-('Icebox Waiter','enemies/haven/iceBoxWaiter.png','Haven','Enemy'),
-('Icebox Waitress','enemies/haven/iceBoxWaitress.png','Haven','Enemy'),
- ('Frostbite','enemies/haven/frostbite.png','Haven','Boss'),
-
-
 ('Angry Bush','https://wimbusstudios.herokuapp.com/enemies/oc/angryBush.png','Ornery Coast','Enemy'),
 ('Bayside Tiger','https://wimbusstudios.herokuapp.com/enemies/oc/baysideTiger.png','Ornery Coast','Enemy'),
 ('Irate Bear','https://wimbusstudios.herokuapp.com/enemies/oc/irateBear.png','Ornery Coast','Enemy'),
